@@ -1,0 +1,78 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+    <div class="px-4 text-center welcome beige-text about-hidden">
+        <img class="d-block mx-auto mb-2 about-logo" src="/assets/QuillSpot Beige.png" alt="" >
+        <h1 class="display-5 fw-bold text-body-emphasis">Welcome to Quill Spot</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">At Quill Spot, we believe in the power of words to inspire, inform, and ignite imagination. Our blog is a vibrant community where writers, readers, and thinkers come together to explore a world of diverse topics and share their unique perspectives.</p>
+        </div>
+      </div>
+      <div class="container px-4 py-5 about-hidden" id="featured-3">
+        <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">What We Offer</h2><hr>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col about-hidden">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+              <img src="/assets/articles.png" height="100px">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">In-Depth Articles</h3>
+            <p class="feature-text">Dive into our extensive collection of articles that cover a wide range of topics including technology, lifestyle, travel, health, and more. Our writers are passionate about providing well-researched and engaging content that keeps you informed and entertained.</p>
+          </div>
+          <div class="feature col about-hidden">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+              <img src="/assets/writing.png" height="100px">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Creative Writing</h3>
+            <p class="feature-text">Quill Spot is a haven for creative writers. From poetry and short stories to personal essays and fictional tales, our blog showcases the creative talents of writers from all walks of life.</p>
+          </div>
+          <div class="feature col about-hidden">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+              <img src="/assets/guest.png" height="100px">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Guest Contributions</h3>
+            <p class="feature-text">We value diverse voices and perspectives. Our platform is open to guest contributors who wish to share their insights and experiences with our readers. If you have a story to tell, Quill Spot is the place for you.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid our-team beige-text about-hidden">
+        <div class="row flex-lg-row-reverse align-items-center g-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="/assets/team.png" class="d-block mx-lg-auto img-fluid" alt="Team" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Our Team</h1>
+            <p class="lead">Quill Spot is brought to life by a team of dedicated writers, editors, and creatives who are committed to delivering high-quality content. Our team works tirelessly to ensure that every piece published on our blog meets our standards of excellence and resonates with our readers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="px-4 pt-5 my-5 text-center about-hidden">
+        <h1 class="display-4 fw-bold text-body-emphasis">Join Us On This Journey</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">We invite you to embark on this journey with us. Whether you're here to find inspiration, learn something new, or simply enjoy a good read, Quill Spot is your destination. Together, let's celebrate the magic of words and the stories that shape our world.
+            <br><br>
+            Thank you for being a part of the Quill Spot community.<br>Happy reading ❤</p>
+        </div>
+        <div class="overflow-hidden" style="max-height: 70vh;">
+            <img src="/assets/join.png" class="img-fluid rounded-3 mb-4" alt="Example image" width="400" height="200" loading="lazy">
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var elements = document.querySelectorAll(".about-hidden");
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("about-fadein");
+                        entry.target.classList.remove("about-hidden");
+                    }
+                });
+            });
+
+            elements.forEach(function(element) {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+
+<%- include("partials/footer.ejs") %>

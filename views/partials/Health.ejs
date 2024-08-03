@@ -1,0 +1,68 @@
+<%- include("../layout.ejs") %>
+
+<body>
+    <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav nav-underline justify-content-between">
+            <a class="nav-item nav-link link-body-emphasis" href="/homepage">World</a>
+            <a class="nav-item nav-link link-body-emphasis" href="/homepage/India">India</a>
+            <a class="nav-item nav-link link-body-emphasis" href="/homepage/Technology">Technology</a>
+            <a class="nav-item nav-link link-body-emphasis" href="/homepage/Business">Business</a>
+            <a class="nav-item nav-link link-body-emphasis" href="/homepage/Politics">Politics</a>
+            <a class="nav-item nav-link link-body-emphasis active" href="/homepage/Health">Health</a>
+            <a class="nav-item nav-link link-body-emphasis" href="/homepage/Travel">Travel</a>
+          </nav>
+        </div>
+        <div class="blog-cards row w-100 mb-2 d-flex">
+          <div class="sub-card col-md-4">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">Health</strong>
+                <h3 class="mb-0">Cupcakes!</h3>
+                <div class="mb-1 text-body-secondary">Today</div>
+                <p class="card-text mb-auto">Cupcake ipsum dolor sit amet oat cake sweet. Candy canes dessert macaroon tootsie roll candy soufflé topping. Candy pastry...</p>
+                <a href="/read/lorem" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading</a>
+              </div>
+              <div class="image d-block d-lg-block">
+                <img src="/assets/cupcake.jpg" width="100%">
+              </div>
+            </div>
+          </div>
+            <div class="sub-card col-md-4">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary-emphasis">Health</strong>
+                  <h3 class="mb-0">Cupcakes!</h3>
+                  <div class="mb-1 text-body-secondary">Today</div>
+                  <p class="card-text mb-auto">Cupcake ipsum dolor sit amet oat cake sweet. Candy canes dessert macaroon tootsie roll candy soufflé topping. Candy pastry...</p>
+                  <a href="/read/lorem" class="icon-link gap-1 icon-link-hover stretched-link">
+                    Continue reading
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+                <div class="image d-block d-lg-block">
+                  <img src="/assets/cupcake.jpg" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="sub-card col-md-4">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary-emphasis">Health</strong>
+                  <h3 class="mb-0">Cupcakes!</h3>
+                  <div class="mb-1 text-body-secondary">Today</div>
+                  <p class="card-text mb-auto">Cupcake ipsum dolor sit amet oat cake sweet. Candy canes dessert macaroon tootsie roll candy soufflé topping. Candy pastry...</p>
+                  <a href="/read/lorem" class="icon-link gap-1 icon-link-hover stretched-link">
+                    Continue reading
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+                <div class="image d-block d-lg-block">
+                  <img src="/assets/cupcake.jpg" width="100%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <%- include("footer.ejs") %>
+</body>

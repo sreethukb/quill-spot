@@ -1,0 +1,106 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+    <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav nav-underline justify-content-between">
+          <a class="nav-item nav-link link-body-emphasis active" href="/homepage">World</a>
+          <a class="nav-item nav-link link-body-emphasis" href="/homepage/India">India</a>
+          <a class="nav-item nav-link link-body-emphasis" href="/homepage/Technology">Technology</a>
+          <a class="nav-item nav-link link-body-emphasis" href="/homepage/Business">Business</a>
+          <a class="nav-item nav-link link-body-emphasis" href="/homepage/Politics">Politics</a>
+          <a class="nav-item nav-link link-body-emphasis" href="/homepage/Health">Health</a>
+          <a class="nav-item nav-link link-body-emphasis" href="/homepage/Travel">Travel</a>
+        </nav>
+      </div>
+      
+      <div class="blog-cards row w-100 mb-2">
+        <div class="sub-card col-md-4">
+          <div class="row border rounded flex-md-row mb-4 shadow-sm position-relative overflow-hidden">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+              <h3 class="mb-0">How Earth Got It's Name</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">The name "Earth" has a fascinating history rooted in ancient languages and cultures. Unlike the names of other planets in our solar...</p>
+              <a href="/read/earth" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading</a>
+            </div>
+            <div class="image d-block d-lg-block">
+              <img src="assets/earth.jpg" width="100%" >
+            </div>
+          </div>
+        </div>
+        <div class="sub-card col-md-4">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                <h3 class="mb-0">The Paris Olympics 2024: A Spectacular Celebration of Sports and Culture</h3>
+                <div class="mb-1 text-body-secondary">Aug 01</div>
+                <p class="card-text mb-auto">The Paris Olympics 2024 is set to be a monumental event, bringing together athletes from...</p>
+                <a href="/read/olympics" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading</a>
+              </div>
+              <div class="image d-block d-lg-block">
+                <img src="assets/olympics.jpeg" width="100%">
+              </div>
+            </div>
+          </div>
+          <div class="sub-card col-md-4">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                <h3 class="mb-0">Another International Hustler!</h3>
+                <div class="mb-1 text-body-secondary">Aug 01</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="/read/study" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                </a>
+              </div>
+              <div class="image d-block d-lg-block">
+                <img src="assets/study.jpg" width="100%">
+              </div>
+            </div>
+          </div>
+          <div class="sub-card col-md-4">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                <h3 class="mb-0">The Timeless Charm of Paris: A Journey Through History</h3>
+                <div class="mb-1 text-body-secondary">Oct 10</div>
+                <p class="card-text mb-auto">Paris, often referred to as the "City of Light," is renowned for its timeless charm, rich history, and...</p>
+                <a href="/read/parishistory" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                </a>
+              </div>
+              <div class="image d-block d-lg-block">
+                <img src="assets/paris1.jpg" width="100%">
+              </div>
+            </div>
+          </div>
+        <div class="sub-card col-md-4">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+              <h3 class="mb-0">The Fascinating Quest for Extraterrestrial Life</h3>
+              <div class="mb-1 text-body-secondary">May 26</div>
+              <p class="card-text mb-auto">Humanity's fascination with aliens, or extraterrestrial life, has been a captivating subject for centuries, blending science, imagination, and...</p>
+              <a href="/read/aliens" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+              </a>
+            </div>
+            <div class="image d-block d-lg-block">
+              <img src="assets/aliens1.jpg" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <%- include("partials/footer.ejs") %>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var elements = document.querySelectorAll(".hidden");
+            elements.forEach(function(element) {
+                element.classList.add("fade-in");
+                element.classList.remove("hidden");
+            });
+        });
+    </script>
+</body>
