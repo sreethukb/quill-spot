@@ -124,7 +124,8 @@ html,body
 }
 
 .created h4{ 
-    font-style: italic;    
+    font-style: italic; 
+    text-align: center;
 }
 .created p{
     margin-top: 2%;
